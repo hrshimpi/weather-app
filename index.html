@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather in App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type = "text/JavaScript" src = " https://MomentJS.com/downloads/moment.js"></script>
+  </head>
+
+  <body>
+    <div class="container my-5">
+ 
+      <div class="card rounded my-3 shadow-lg back-card"  id="back-card">
+        
+        <div class="card-body py-4">
+
+          <div class="card-mid row ">
+            <div class="col-4 text-center temp " >
+              <span class="">30&deg;</span>
+            </div>
+
+            <div class="col-7 condition-temp px-4" style="margin-left:20px ; margin-bottom: -0; border-left: 2px solid white; " >
+              <div class="row city-name" style="color: #ffffff; margin-bottom: 0%;">
+                <p style="font-weight: 50; font-size: 1.6em">Weather Description</p>  
+                <!-- <p>Mumbai</p> -->
+              </div>
+              <form class="row search-loaction">
+                <input type="text" name="city" placeholder="What city?" 
+                autocomplete="off" class="form-control p-4 shadow-sm" 
+                style="border-radius: 10px; 
+                background-color:#c4edf6; 
+                color: rgb(20, 15, 15); opacity: .5;"/>
+              </form>
+            </div>
+          </div>
+          
+          <!-- icon -->
+          <div class="icon-container card shadow mx-auto m-2">
+            <img src="./icons/01d.gif" alt=""  style="width: 150px; height:auto; border-radius:100%"/>
+          </div>
+
+          <div class="row justify-content-center mx-auto my-3">
+            <!-- <div class="w-100"></div> -->
+            <div class="row"><span style="font-weight: 50; font-size: 2.6em;">Day</span></div>
+            <div class="w-100"></div>
+            <div class="row"><span style="font-weight: 50; font-size: 2.6em;">Date</span></div>
+            <div class="w-100"></div>
+            <div class="row"><span style="font-weight: 50; font-size: 1.8em;">Time</span></div>
+          </div>
+          <!-- last card -->
+          <div class="card-bottom row m-2 justify-content-center">
+            <div class="row">
+            <div class="col-3 text-center my-2">
+              <div class="icon-container-2 card shadow">
+                <img src="./icons/wind.gif" alt="" />
+              </div>
+            </div>
+            <div class="col-3 text-center" style="margin-top: 20px;">
+              <p>Wind 13Km/h</p>
+            </div>
+      
+            <div class="col text-center my-2">
+              <div class="icon-container-2 card shadow">
+                <img src="./icons/humidity.gif" alt="" />
+              </div>
+            </div>
+            <div class="col-3 text-center" style="margin-top: 20px;">
+              <p>Humidity 78%</p>
+            </div>
+          </div>
+            <!-- <div class="w-100"></div> -->
+          <div class="row">
+            <div class="col-3 text-center my-2">
+              <div class="icon-container-2 card shadow">
+                <img src="./icons/distance.gif" alt="" />
+              </div>
+            </div>
+            <div class="col-3 text-center " style="margin-top: 20px;">
+              <p>Visibilty 14Km</p>
+            </div>
+      
+            <div class="col text-center my-2">
+              <div class="icon-container-2 card shadow">
+                <img src="./icons/pressure.png" alt="" />
+              </div>
+            </div>
+            <div class="col-3 text-center" style="margin-top: 20px;">
+              <p>Air Pressure 1005hPa</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var today = new Date();
+      var now = moment(today).format("MM MMM YYYY");
+      console.log(now);
+      var now2 = moment(today).format("dddd");
+      console.log(now2);
+      var now3 = moment(today).format("LT");
+      console.log(now3);
+    </script>
+    <script src="request.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
+body {
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: sans-serif;
+  background: #ffffff;
+  color: #707070;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 450px;
+  min-width: 450px;
+  
+}
+
+.form-rounded {
+  border-radius: 2em;
+}
+
+.back-card {
+  border-radius: 40px !important;
+  background: rgb(209,247,255);
+background: linear-gradient(0deg, rgba(209,247,255,1) 21%, rgba(127,227,247,1) 57%, rgba(44,179,251,1) 100%);
+/* background: rgb(176,176,176);
+background: linear-gradient(0deg, rgba(176,176,176,1) 0%, rgba(103,102,102,1) 49%, rgba(71,71,71,1) 100%); */
+
+}
+
+.city-name {
+  /* position: absolute; */
+  width: 100%;
+}
+
+.city-name p {
+  font-size: 16pt;
+  font-weight: 400;
+}
+
+.temp span {
+  font-weight: 50;
+  font-size: 5em;
+  letter-spacing: -3px;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+.high::before {
+  content: '';
+  background: url('img/up.svg') no-repeat;
+  width: 10px;
+  height: 15px;
+  display: inline-block;
+  /* position: relative; */
+  top: 3px;
+}
+
+.low::before {
+  content: '';
+  background: url('img/down.svg') no-repeat;
+  width: 10px;
+  height: 15px;
+  display: inline-block;
+  /* position: relative; */
+  top: 3px;
+}
+.icon-container {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  /* background: #202020; */
+}
+.icon-container img {
+  margin: auto;
+}
+
+.icon-container-2 img{
+  max-width: 80%;
+}
+.icon-container-2 {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  /* background: #202020; */
+  max-width: 100%;
+}
+.icon-container-2 img {
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%; */
+  margin: auto;
+}
+
+.card-bottom {
+  line-height: 1;
+}
